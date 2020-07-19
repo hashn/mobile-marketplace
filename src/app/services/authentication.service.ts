@@ -52,6 +52,8 @@ export class AuthenticationService {
   }
 
 
+  get_user() { return this.ngFireAuth.user; }
+
   getUser(){
     return this.ngFireAuth.user;
   }

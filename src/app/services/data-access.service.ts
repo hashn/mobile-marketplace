@@ -11,7 +11,7 @@ export class DataAccessService {
 	constructor(private db:AngularFirestore) {}
 
 	add_listing(listing) {
-		return this.db.collection<any>('/listings').add({
+		return this.db.collection<any>('listings').add({
 			title: listing.title,
 			user_id: listing.user_id,
 			description: listing.description,
@@ -21,7 +21,7 @@ export class DataAccessService {
 	}
 
 	get_user_listing(user_id) {
-		return this.db.collection<any>('/listing')
+		return this.db.collection<any>('listings', ref => ref.where('user_id', '==', user_id)).valueChanges()
 	}
 
 	// addListing(userId, listing) {

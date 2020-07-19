@@ -5,11 +5,11 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: "AIzaSyAryBU__k5xUNSKst9H4pdHibQA_-dwgAM",
-    authDomain: "mobile-marketplace-5c7f0.firebaseapp.com",
-    databaseURL: "https://mobile-marketplace-5c7f0.firebaseio.com",
-    projectId: "mobile-marketplace-5c7f0",
-    storageBucket: "mobile-marketplace-5c7f0.appspot.com",
+    apiKey: "AIzaSyAy5KBwT1OAu4MYCJ8F1npuGeWxRQpSpoQ",
+    authDomain: "mobilemarketplaceg7.firebaseapp.com",
+    databaseURL: "https://mobilemarketplaceg7.firebaseio.com",
+    projectId: "mobilemarketplaceg7",
+    storageBucket: "mobilemarketplaceg7.appspot.com",
     messagingSenderId: "1093158737254",
     appId: "1:1093158737254:web:5b5767b8986a13f0e2a4a7",
     measurementId: "G-Z84LS2KSMJ"

@@ -17,7 +17,7 @@ export class AuthGuard implements CanActivate {
     
       if (user && user !== null && user !== 'null') {
           let currentUser = JSON.parse(user);
-          console.log(currentUser)
+
           if(currentUser.emailVerified){
               return true;
           }

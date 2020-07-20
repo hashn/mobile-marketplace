@@ -1,10 +1,19 @@
 <ion-header>
-  <ion-toolbar color="secondary">
-   
-    <ion-title>Home</ion-title>
-  </ion-toolbar>
+	<ion-toolbar color="secondary">
+	 
+		<ion-title>Home</ion-title>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+	<div class="container">
+		<div class="card_div2" *ngFor="let listing of listings">
+			<div class="tymbooker_image" [style.backgroundImage]="'url(' + listing.photo_url + ')'"></div>
+			<div style="padding-left: 10px;">
+				<ion-label class="tymbooker_name">{{ listing.title }}</ion-label>
+				<ion-label class="date">{{ listing.description }}</ion-label>
+				<ion-label class="date">{{ listing.price }}</ion-label>
+			</div>
+		</div>
+	</div>
 </ion-content>

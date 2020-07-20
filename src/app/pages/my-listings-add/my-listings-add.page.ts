@@ -74,7 +74,6 @@ export class MyListingsAddPage implements OnInit {
 
 		this.authSvc.getUser().subscribe(user => {
 		 this.user = user; 
-	 
 		});
 	}
 

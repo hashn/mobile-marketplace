@@ -13,12 +13,12 @@ import { AuthenticationService } from 'src/app/services/authentication.service';
 export class HomePage implements OnInit {
 
 	user;
-	data;
+	listings;
 
 	constructor(private Router:Router, private Listings_DAS:Listing_DAS, private AuthenticationService:AuthenticationService) {
 		this.AuthenticationService.get_user().subscribe(user => {
 			this.user = user
-			this.Listings_DAS.get_listings().subscribe(Response => { this.data = Response })
+			this.Listings_DAS.get_listings().subscribe(Response => { this.listings = Response })
 		})
 	}
 

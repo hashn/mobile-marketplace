@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { Router } from '@angular/router';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { userInfo } from 'os';
 
 @Injectable({
   providedIn: 'root'
@@ -68,5 +69,10 @@ export class AuthenticationService {
   }
 
 
+  	set_user(user_info) {
+		this.ngFireAuth.authState.subscribe(auth => {
+			auth.updateProfile(user_info).then(() => { return true })
+		})
+	}
 
 }

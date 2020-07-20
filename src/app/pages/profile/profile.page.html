@@ -6,5 +6,45 @@
 </ion-header>
 
 <ion-content>
+	<div class="container">
+    
+    <div class="avatar" [style.backgroundImage]="'url(https://i.pinimg.com/236x/14/ee/c7/14eec7b178a66564dd52e9825010b896.jpg)'"></div>
 
+    <!-- with name set -->
+    <div class="wrapper">
+      <ion-grid>
+
+        <form [formGroup]="user_form">
+          <ion-row>
+            <ion-col>
+              <ion-label class="label">Name</ion-label>
+              <ion-input type="text" class="input" formControlName="name"></ion-input>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <ion-label>Email</ion-label>
+            	<ion-input type="text" class="input" formControlName="email"></ion-input>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <ion-label>Phone</ion-label>
+              <ion-input type="text" class="input" formControlName="phone"></ion-input>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <ion-button color="secondary"  type="submit" expand="block" (click)="onSubmit()">Update Profile</ion-button>
+            </ion-col>
+          </ion-row>
+        </form>
+
+      </ion-grid>
+    </div>
+
+	</div>
 </ion-content>

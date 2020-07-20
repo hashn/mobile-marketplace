@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    padding: 20px;
+
+    .avatar {
+        height: 150px;
+        width: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 100%;
+    }
+
+    .wrapper {
+      margin-top: 25px;
+
+      .input {
+        
+        border: solid 1px #EEE;
+        border-radius: 3px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+
+      }
+    }
+
+}

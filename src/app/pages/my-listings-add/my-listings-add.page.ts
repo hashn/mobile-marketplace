@@ -53,7 +53,7 @@ export class MyListingsAddPage implements OnInit {
 		private sanitizer: DomSanitizer,
 		public alertCtrl: AlertController,
 		public actionCtrl:ActionSheetController,
-		private storage: AngularFireStorage, 
+		private storage: AngularFireStorage,
 		private dataSvc:DataAccessService
 	) { 
 		this.isUploading = false;
